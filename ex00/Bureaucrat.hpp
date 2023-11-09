@@ -6,7 +6,7 @@
 /*   By: cgodecke <cgodecke@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 11:01:37 by cgodecke          #+#    #+#             */
-/*   Updated: 2023/11/08 14:57:01 by cgodecke         ###   ########.fr       */
+/*   Updated: 2023/11/09 10:12:29 by cgodecke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,13 +20,13 @@
 class Bureaucrat
 {
 	private:
-		std::string	_name;
-		int			_grade;
+		const std::string	_name;
+		int					_grade;
 
 	public:
 		// Constructors
 		Bureaucrat();
-		Bureaucrat(std::string name, int grade);
+		Bureaucrat(const std::string name, int grade);
 		Bureaucrat(const Bureaucrat &other);
 		Bureaucrat &operator=(const Bureaucrat &other);
 		~Bureaucrat();
