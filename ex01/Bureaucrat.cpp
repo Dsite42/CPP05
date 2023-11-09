@@ -6,7 +6,7 @@
 /*   By: cgodecke <cgodecke@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 11:01:12 by cgodecke          #+#    #+#             */
-/*   Updated: 2023/11/08 15:26:16 by cgodecke         ###   ########.fr       */
+/*   Updated: 2023/11/09 09:54:37 by cgodecke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include "Form.hpp"
 
 // Constructors
-Bureaucrat::Bureaucrat() : _name("default"), _grade(150)
+Bureaucrat::Bureaucrat() : _name("Default"), _grade(150)
 {
 
 }
@@ -78,7 +78,16 @@ void Bureaucrat::decrementGrade()
 
 void Bureaucrat::signForm(Form &form)
 {
-	form.beSigned(*this);
+	try
+	{
+		form.beSigned(*this);
+	}
+	catch(const std::exception& e)
+	{
+		std::cout << _name << " couldn't sign " << form.getName() << " because " << e.what() << std::endl;
+		return;
+	}
+	std::cout << _name << " signed " << form.getName() << std::endl;
 }
 
 std::ostream &operator<<(std::ostream &os, Bureaucrat const &other)

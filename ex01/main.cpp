@@ -6,7 +6,7 @@
 /*   By: cgodecke <cgodecke@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 11:02:23 by cgodecke          #+#    #+#             */
-/*   Updated: 2023/11/08 15:41:47 by cgodecke         ###   ########.fr       */
+/*   Updated: 2023/11/09 09:52:37 by cgodecke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -89,6 +89,9 @@ int main(void)
 	Bureaucrat mr_slow;
 	Bureaucrat mr_id("MR_ID", 100);
 	std::cout << id_form;
+	
+	mr_slow.signForm(id_form);
+	/*
 	try
 	{
 		mr_slow.signForm(id_form);
@@ -99,6 +102,7 @@ int main(void)
 	}
 	std::cout << id_form;
 
+
 	try
 	{
 		mr_id.signForm(id_form);
@@ -107,6 +111,8 @@ int main(void)
 	{
 		std::cerr << e.what() << '\n';
 	}
+*/
+
 	std::cout << id_form;
 	
 	return (0);
