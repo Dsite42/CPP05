@@ -6,7 +6,7 @@
 /*   By: cgodecke <cgodecke@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 11:02:23 by cgodecke          #+#    #+#             */
-/*   Updated: 2023/11/09 09:52:37 by cgodecke         ###   ########.fr       */
+/*   Updated: 2023/11/10 10:18:07 by cgodecke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -91,29 +91,14 @@ int main(void)
 	std::cout << id_form;
 	
 	mr_slow.signForm(id_form);
-	/*
-	try
-	{
-		mr_slow.signForm(id_form);
-	}
-	catch(const std::exception& e)
-	{
-		std::cerr << e.what() << '\n';
-	}
+	std::cout << id_form;
+
+	mr_id.signForm(id_form);
 	std::cout << id_form;
 
 
-	try
-	{
-		mr_id.signForm(id_form);
-	}
-	catch(const std::exception& e)
-	{
-		std::cerr << e.what() << '\n';
-	}
-*/
 
-	std::cout << id_form;
+	
 	
 	return (0);
 }
