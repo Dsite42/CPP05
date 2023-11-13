@@ -6,7 +6,7 @@
 #    By: cgodecke <cgodecke@student.42wolfsburg.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/12/18 15:39:27 by cgodecke          #+#    #+#              #
-#    Updated: 2023/11/13 14:28:06 by cgodecke         ###   ########.fr        #
+#    Updated: 2023/11/13 16:29:51 by cgodecke         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,6 +17,7 @@ INFILES = 	main.cpp\
 			AForm.cpp\
 			ShrubberyCreationForm.cpp\
 			RobotomyRequestForm.cpp\
+			PresidentialPardonForm.cpp\
 
 OBJFILES = $(INFILES:.cpp=.o)
 

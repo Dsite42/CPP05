@@ -14,12 +14,12 @@
 #include <string>
 RobotomyRequestForm::RobotomyRequestForm() : AForm("RobotomyRequestForm", 72, 45)
 {
-
+	srand(time(NULL));
 }
 
 RobotomyRequestForm::RobotomyRequestForm(const std::string target) : AForm("RobotomyRequestForm", 72, 45), _target(target)
 {
-	
+	srand(time(NULL));
 }
 
 RobotomyRequestForm::RobotomyRequestForm(const RobotomyRequestForm &other)
@@ -45,7 +45,6 @@ void RobotomyRequestForm::performAction() const
 {
 	int random_number;
 
-	srand(time(NULL));
 	random_number = rand() % 2;
 
 	if (random_number == 1)

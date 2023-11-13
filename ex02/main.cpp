@@ -6,7 +6,7 @@
 /*   By: cgodecke <cgodecke@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 11:02:23 by cgodecke          #+#    #+#             */
-/*   Updated: 2023/11/13 14:30:15 by cgodecke         ###   ########.fr       */
+/*   Updated: 2023/11/13 16:31:58 by cgodecke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 #include "AForm.hpp"
 #include "ShrubberyCreationForm.hpp"
 #include "RobotomyRequestForm.hpp"
+#include "PresidentialPardonForm.hpp"
 
 int main(void)
 {
@@ -104,7 +105,19 @@ int main(void)
 	Mr_Robo.executeForm(Robo_form);
 	Mr_Robo.signForm(Robo_form);
 	Mr_Robo.executeForm(Robo_form);
+	Mr_Robo.executeForm(Robo_form);
+	Mr_Robo.executeForm(Robo_form);
 
+	std::cout << "\033[33m" << std::endl << "Test ex02 PresidentialPardonForm" << "\033[0m" << std::endl;
+	PresidentialPardonForm President_form("I am a robo form");
+	Bureaucrat Mr_President("Mr_President", 5);
+
+	Mr_Robo.executeForm(President_form);
+	Mr_Robo.signForm(President_form);
+
+	Mr_President.executeForm(President_form);
+	Mr_President.signForm(President_form);
+	Mr_President.executeForm(President_form);
 	
 	return (0);
 }
