@@ -6,7 +6,7 @@
 /*   By: cgodecke <cgodecke@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 11:02:23 by cgodecke          #+#    #+#             */
-/*   Updated: 2023/11/10 15:45:02 by cgodecke         ###   ########.fr       */
+/*   Updated: 2023/11/13 13:05:44 by cgodecke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,7 +86,7 @@ int main(void)
 
 
 	std::cout << "\033[33m" << std::endl << "Test ex02" << "\033[0m" << std::endl;
-	Bureaucrat Mr_Shrubby("Mr_Shrubby", 145);
+	Bureaucrat Mr_Shrubby("Mr_Shrubby", 130);
 	ShrubberyCreationForm Shrubby_form("Hello");
 	std::cout << std::endl;
 	std::cout << Shrubby_form;

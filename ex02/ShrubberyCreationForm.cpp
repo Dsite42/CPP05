@@ -6,7 +6,7 @@
 /*   By: cgodecke <cgodecke@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/10 10:40:41 by cgodecke          #+#    #+#             */
-/*   Updated: 2023/11/10 15:04:02 by cgodecke         ###   ########.fr       */
+/*   Updated: 2023/11/13 13:08:54 by cgodecke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,6 +59,11 @@ void ShrubberyCreationForm::performAction() const
 		outFile.close();
 	}
 	else
-		throw;
+		throw ShrubberyCreationForm::OpenFileExeption();
 		
+}
+
+const char *ShrubberyCreationForm::OpenFileExeption::what() const throw()
+{
+	return ("Could not open and write the file!");
 }

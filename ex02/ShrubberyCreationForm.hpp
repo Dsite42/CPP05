@@ -6,7 +6,7 @@
 /*   By: cgodecke <cgodecke@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/10 10:40:28 by cgodecke          #+#    #+#             */
-/*   Updated: 2023/11/10 15:19:55 by cgodecke         ###   ########.fr       */
+/*   Updated: 2023/11/13 13:02:39 by cgodecke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,13 @@ class ShrubberyCreationForm : public AForm
 		ShrubberyCreationForm(const ShrubberyCreationForm &other);
 		ShrubberyCreationForm &operator=(const ShrubberyCreationForm &other);
 		~ShrubberyCreationForm();
+
+		// exceptions
+		class OpenFileExeption : public std::exception
+		{
+			public:
+				virtual const char *what() const throw();
+		};
 
 };
 
