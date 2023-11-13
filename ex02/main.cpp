@@ -6,13 +6,14 @@
 /*   By: cgodecke <cgodecke@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 11:02:23 by cgodecke          #+#    #+#             */
-/*   Updated: 2023/11/13 13:05:44 by cgodecke         ###   ########.fr       */
+/*   Updated: 2023/11/13 14:30:15 by cgodecke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Bureaucrat.hpp"
 #include "AForm.hpp"
 #include "ShrubberyCreationForm.hpp"
+#include "RobotomyRequestForm.hpp"
 
 int main(void)
 {
@@ -86,15 +87,24 @@ int main(void)
 
 
 	std::cout << "\033[33m" << std::endl << "Test ex02" << "\033[0m" << std::endl;
+
+	std::cout << "\033[33m" << std::endl << "Test ex02 ShrubberyCreationForm" << "\033[0m" << std::endl;
 	Bureaucrat Mr_Shrubby("Mr_Shrubby", 130);
 	ShrubberyCreationForm Shrubby_form("Hello");
 	std::cout << std::endl;
 	std::cout << Shrubby_form;
 	Mr_Shrubby.signForm(Shrubby_form);
 	std::cout << Shrubby_form;
-	
-
 	Mr_Shrubby.executeForm(Shrubby_form);
+
+	std::cout << "\033[33m" << std::endl << "Test ex02 RobotomyRequestForm" << "\033[0m" << std::endl;
+	RobotomyRequestForm Robo_form("I am a robo form");
+	Bureaucrat Mr_Robo("Mr_Robo", 45);
+
+	Mr_Robo.executeForm(Robo_form);
+	Mr_Robo.signForm(Robo_form);
+	Mr_Robo.executeForm(Robo_form);
+
 	
 	return (0);
 }

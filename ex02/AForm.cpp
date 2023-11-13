@@ -80,7 +80,7 @@ void AForm::execute(const Bureaucrat &executor) const
 	if (_execute_grade < executor.getGrade())
 		throw GradeTooLowException();
 
-		performAction();
+	performAction();
 }
 
 
