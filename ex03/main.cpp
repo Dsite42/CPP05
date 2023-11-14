@@ -6,7 +6,7 @@
 /*   By: cgodecke <cgodecke@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 11:02:23 by cgodecke          #+#    #+#             */
-/*   Updated: 2023/11/14 14:00:34 by cgodecke         ###   ########.fr       */
+/*   Updated: 2023/11/14 14:02:14 by cgodecke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -129,5 +129,6 @@ int main(void)
 	robo_intern = Jr_Intern.makeForm("RobotomyRequestForm", "World");
 
 	std::cout << robo_intern->getName() << std::endl;
+	delete robo_intern;
 	return (0);
 }
