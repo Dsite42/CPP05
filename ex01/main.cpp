@@ -6,7 +6,7 @@
 /*   By: cgodecke <cgodecke@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 11:02:23 by cgodecke          #+#    #+#             */
-/*   Updated: 2023/11/10 10:18:07 by cgodecke         ###   ########.fr       */
+/*   Updated: 2023/11/14 14:23:50 by cgodecke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,8 @@
 
 int main(void)
 {
+	std::cout << "\033[33m" << std::endl << "Test ex01" << "\033[0m" << std::endl;
+
 	std::cout << "\033[33m" << std::endl << "Test too high and too low creation" << "\033[0m" << std::endl;
 	try
 	{
@@ -95,10 +97,6 @@ int main(void)
 
 	mr_id.signForm(id_form);
 	std::cout << id_form;
-
-
-
-	
 	
 	return (0);
 }

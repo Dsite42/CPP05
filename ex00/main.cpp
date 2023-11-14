@@ -6,7 +6,7 @@
 /*   By: cgodecke <cgodecke@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 11:02:23 by cgodecke          #+#    #+#             */
-/*   Updated: 2023/11/02 19:28:20 by cgodecke         ###   ########.fr       */
+/*   Updated: 2023/11/14 14:22:40 by cgodecke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 int main(void)
 {
+	std::cout << "\033[33m" << std::endl << "Test ex01" << "\033[0m" << std::endl;
+
 	std::cout << "\033[33m" << std::endl << "Test too high and too low creation" << "\033[0m" << std::endl;
 	try
 	{
