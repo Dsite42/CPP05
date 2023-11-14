@@ -50,10 +50,13 @@ AForm *Intern::makeForm(const std::string form_name, const std::string form_targ
 	switch (i)
 	{
 	case 0:
+		std::cout << "Intern creates " << form_name << std::endl;
 		return (new ShrubberyCreationForm(form_target));
 	case 1:
+		std::cout << "Intern creates " << form_name << std::endl;
 		return (new RobotomyRequestForm(form_name));
 	case 2:
+		std::cout << "Intern creates " << form_name << std::endl;
 		return (new PresidentialPardonForm (form_target));
 	default:
 		std::cout << "Form is not existing" << std::endl;

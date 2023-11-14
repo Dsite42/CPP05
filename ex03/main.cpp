@@ -6,7 +6,7 @@
 /*   By: cgodecke <cgodecke@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 11:02:23 by cgodecke          #+#    #+#             */
-/*   Updated: 2023/11/14 14:02:14 by cgodecke         ###   ########.fr       */
+/*   Updated: 2023/11/14 14:39:20 by cgodecke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -126,6 +126,7 @@ int main(void)
 	Intern Jr_Intern;
 	AForm *robo_intern;
 
+	robo_intern = Jr_Intern.makeForm("DoYouKnowMe", "Hmmmm");
 	robo_intern = Jr_Intern.makeForm("RobotomyRequestForm", "World");
 
 	std::cout << robo_intern->getName() << std::endl;
