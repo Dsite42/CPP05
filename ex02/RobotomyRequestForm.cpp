@@ -12,14 +12,14 @@
 
 #include "RobotomyRequestForm.hpp"
 #include <string>
-RobotomyRequestForm::RobotomyRequestForm() : AForm("RobotomyRequestForm", 72, 45)
+RobotomyRequestForm::RobotomyRequestForm() : AForm("RobotomyRequestForm", 72, 45), _target("default target")
 {
-	srand(time(NULL));
+	
 }
 
 RobotomyRequestForm::RobotomyRequestForm(const std::string target) : AForm("RobotomyRequestForm", 72, 45), _target(target)
 {
-	srand(time(NULL));
+
 }
 
 RobotomyRequestForm::RobotomyRequestForm(const RobotomyRequestForm &other)
