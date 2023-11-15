@@ -22,7 +22,7 @@ RobotomyRequestForm::RobotomyRequestForm(const std::string target) : AForm("Robo
 
 }
 
-RobotomyRequestForm::RobotomyRequestForm(const RobotomyRequestForm &other)
+RobotomyRequestForm::RobotomyRequestForm(const RobotomyRequestForm &other) : AForm(other)
 {
 	*this = other;
 }

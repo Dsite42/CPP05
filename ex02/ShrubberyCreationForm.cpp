@@ -22,7 +22,7 @@ ShrubberyCreationForm::ShrubberyCreationForm(const std::string target) : AForm("
 	
 }
 
-ShrubberyCreationForm::ShrubberyCreationForm(const ShrubberyCreationForm &other)
+ShrubberyCreationForm::ShrubberyCreationForm(const ShrubberyCreationForm &other) : AForm(other)
 {
 	*this = other;
 }
@@ -43,7 +43,7 @@ ShrubberyCreationForm::~ShrubberyCreationForm()
 
 void ShrubberyCreationForm::performAction() const
 {
-	std::ofstream outFile(_target + std::string("_shrubbery"));
+	std::ofstream outFile((_target + std::string("_shrubbery")).c_str());
 
 	if (outFile)
 	{
